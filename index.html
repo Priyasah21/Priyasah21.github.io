@@ -74,21 +74,25 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Subject">
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+     <form class="contact-form" id="contactForm" action="https://formsubmit.co/your-email@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="form-group">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+  <div class="form-group">
+    <input type="text" name="subject" class="form-control" placeholder="Subject">
+  </div>
+  <div class="form-group">
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
     </div>
   </section>
 
